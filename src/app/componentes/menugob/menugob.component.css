@@ -1,0 +1,9 @@
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+    background-color: #0C231E;
+}
+
+.navbar .navbar-nav .navbar-item {
+    color: #fff;
+}
