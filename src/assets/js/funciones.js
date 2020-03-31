@@ -16,8 +16,6 @@ $(document).ready(function() {
         }
     });
 
-
-
     /* Logo Slider */
     $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function() {
         var next = $(this).next();
