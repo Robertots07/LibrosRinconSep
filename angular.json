@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "librosdRincon"
+    }
+  },
+  "defaultProject": "librosdRincon",
+  "cli": {
+    "analytics": false
+  }
 }
