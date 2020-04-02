@@ -11,6 +11,7 @@ import { HomeAcervosComponent } from './acervos/home-acervos/home-acervos.compon
 import { SobrecoleccionComponent } from './acervos/sobrecoleccion/sobrecoleccion.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SidebarComponent } from './componentes/sidebar/sidebar.component';
+import { SeriesComponent } from './acervos/series/series.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SidebarComponent } from './componentes/sidebar/sidebar.component';
     HomeAcervosComponent,
     SobrecoleccionComponent,
     MenuComponent,
-    SidebarComponent
+    SidebarComponent,
+    SeriesComponent
   ],
   imports: [
     BrowserModule,
