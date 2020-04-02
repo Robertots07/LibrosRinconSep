@@ -12,7 +12,7 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #7796BA;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
@@ -26,12 +26,12 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #7796BA;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #5b8ec9;
 }
 
 #sidebar ul p {
@@ -53,7 +53,7 @@
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: rgb(106, 135, 168);
 }
 
 a[data-toggle="collapse"] {
@@ -71,7 +71,13 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: rgb(84, 110, 140) !important;
+}
+
+ul ul a:hover {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #fff !important;
 }
 
 ul.CTAs {
@@ -88,15 +94,23 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: rgb(54, 68, 83);
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: rgb(54, 68, 83) !important;
     color: #fff !important;
 }
 
+#sidebar ul li a {
+    color: rgb(54, 68, 83) !important;
+}
+
+#sidebar ul li a:hover {
+    background-color: #fff;
+    color: rgb(54, 68, 83) !important;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -143,6 +157,7 @@ a.article:hover {
     opacity: 1;
     margin: 5px auto;
 }
+
 
 
 /* ---------------------------------------------------
