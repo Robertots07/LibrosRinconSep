@@ -111,3 +111,11 @@ body {
 
 
 /*Logo Slider*/
+
+.linea1 {
+    border: 2px solid #2F62A1;
+}
+
+p {
+    font-weight: 400 !important;
+}
