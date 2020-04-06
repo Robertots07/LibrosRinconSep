@@ -12,6 +12,11 @@ import { SobrecoleccionComponent } from './acervos/sobrecoleccion/sobrecoleccion
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 import { SeriesComponent } from './acervos/series/series.component';
+import { CategoriasComponent } from './acervos/categorias/categorias.component';
+import { TitulosMonolinguesComponent } from './acervos/titulos-monolingues/titulos-monolingues.component';
+import { TitulosBilinguesComponent } from './acervos/titulos-bilingues/titulos-bilingues.component';
+import { ProduccionEstatalComponent } from './acervos/produccion-estatal/produccion-estatal.component';
+import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/catalogo-electronico.component';
 
 
 @NgModule({
@@ -25,7 +30,12 @@ import { SeriesComponent } from './acervos/series/series.component';
     SobrecoleccionComponent,
     MenuComponent,
     SidebarComponent,
-    SeriesComponent
+    SeriesComponent,
+    CategoriasComponent,
+    TitulosMonolinguesComponent,
+    TitulosBilinguesComponent,
+    ProduccionEstatalComponent,
+    CatalogoElectronicoComponent
   ],
   imports: [
     BrowserModule,
