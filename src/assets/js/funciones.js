@@ -37,5 +37,9 @@ $(document).ready(function() {
         $('#sidebar').toggleClass('active');
         $(this).toggleClass('active');
     });
+
+    $('.mdb-select').materialSelect({
+    });
+    
     /*aqui rebe termina lo javascript*/
 });
