@@ -1,0 +1,289 @@
+<div class="wrapper">
+    <!-- Sidebar Holder -->
+    <app-sidebar></app-sidebar>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    <div class="row mt-4">
+        <div class="col-md-5">
+            <h2 class="font-weight-bold">Catálogo Electrónico
+            <hr class="my-4 linea1">
+            </h2>            
+        </div>
+
+        <div class="col-md-7">
+            <p class="text-justify">El catálogo electrónico de la colección Libros del Rincón, es un recurso para la consulta de los títulos que conforman los acervos de Bibliotecas Escolares y Bibliotecas de Aula que se encuentran en las escuelas de educación básica.</p>
+
+            <p class="text-justify">Su objetivo es dar a conocer a la comunidad educativa principalmente, y a todos aquellos interesados en el tema de la lectura, las características de los títulos de la colección Libros del Rincón, para ello se brinda una ficha técnica de cada libro que cuenta con una reseña.</p>
+                
+            <p class="text-justify">Para acceder a la información se ofrecen diferentes opciones de búsqueda, que permiten encontrar los libros de una manera sencilla.</p>
+        </div>       
+
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+            <!--Buscador -->
+            <div class="white z-depth-1">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="buscar-tab" data-toggle="tab" href="#buscar" role="tab" aria-controls="buscar"
+                    aria-selected="true">Buscar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="series-tab" data-toggle="tab" href="#series" role="tab" aria-controls="series"
+                    aria-selected="false">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="be-ba-tab" data-toggle="tab" href="#be-ba" role="tab" aria-controls="be-ba"
+                    aria-selected="false">BE/BA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="az-tab" data-toggle="tab" href="#az" role="tab" aria-controls="az"
+                      aria-selected="false">A-Z</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nivel-tab" data-toggle="tab" href="#nivel" role="tab" aria-controls="nivel"
+                      aria-selected="false">Nivel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="avanzada-tab" data-toggle="tab" href="#avanzada" role="tab" aria-controls="avanzada"
+                      aria-selected="false">Avanzada</a>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="buscar" role="tabpanel" aria-labelledby="buscar-tab">
+                    <h5>Búsqueda rápida por título, autor o tema</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+                                <input class="form-control form-control-sm w-100" type="text" placeholder="Buscar"
+                                  aria-label="Search">
+                              </form>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="mdb-select" searchable="Seleccionar..">
+                                <option value="1">Título</option>
+                                <option value="2">Autor</option>
+                                <option value="3">Tema</option>
+                              </select>
+                        </div>
+                    </div>
+                    <h5>Período</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <select class="mdb-select" searchable="Seleccionar..">
+                                <option value="1">Cualquier año</option>
+                                <option value="2">2006</option>
+                                <option value="3">2007</option>
+                                <option value="4">2008</option>
+                                <option value="5">2009</option>
+                                <option value="6">2010</option>
+                                <option value="7">2011</option>
+                                <option value="8">2012</option>
+                                <option value="9">2013</option>
+                                <option value="10">2014</option>
+                                <option value="11">2015</option>
+                                <option value="12">2016</option>
+                                <option value="13">2017</option>
+                                <option value="14">2018</option>
+                                <option value="15">2019</option>
+                                <option value="15">2019</option>
+                              </select>
+                        </div>
+                        <div class="col-md-2">
+                            <h6 class="text-center">a</h6>
+                        </div>
+                        <div class="col-md-5">
+                            <select class="mdb-select" searchable="Seleccionar..">
+                                <option value="1">Cualquier año</option>
+                                <option value="2">2006</option>
+                                <option value="3">2007</option>
+                                <option value="4">2008</option>
+                                <option value="5">2009</option>
+                                <option value="6">2010</option>
+                                <option value="7">2011</option>
+                                <option value="8">2012</option>
+                                <option value="9">2013</option>
+                                <option value="10">2014</option>
+                                <option value="11">2015</option>
+                                <option value="12">2016</option>
+                                <option value="13">2017</option>
+                                <option value="14">2018</option>
+                                <option value="15">2019</option>
+                                <option value="15">2020</option>
+                              </select>
+                        </div>
+                    </div>
+                    <a role="button" href="#" class="btn btn-outline-primary">Buscar</a>
+                </div>
+
+                <div class="tab-pane fade" id="series" role="tabpanel" aria-labelledby="series-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid" src="../../../assets/img/al-sol-solito.jpg" alt="Al sol solito"></a>
+                            <br>
+                            <h6 class="text-center font-weight-bold my-3">Para los más chiquitos</h6>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid" src="../../../assets/img/pasos-de-luna.jpg" alt="Pasos de luna"></a>
+                            <br>
+                            <h6 class="text-center font-weight-bold my-3">Para los que empiezan a leer</h6>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid" src="../../../assets/img/astrolabio.jpg" alt="Astrolabio"></a>
+                            <br>
+                            <h6 class="text-center font-weight-bold my-3">Para los que leen con fluidez</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid" src="../../../assets/img/espejo-de-urania.jpg" alt="Espejo de Urania"></a>
+                            <br>
+                            <h6 class="text-center font-weight-bold my-3">Para los lectores autónomos</h6>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><img class="img-fluid" src="../../../assets/img/cometas-convidados.jpg" alt="Cometas convidados"></a>
+                            <br>
+                            <h6 class="text-center font-weight-bold my-3">Para los lectores de diversas edades</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="be-ba" role="tabpanel" aria-labelledby="be-ba-tab">
+                    <h5>Selecciona una opción</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a role="button" href="#" class="btn btn-outline-primary">Bibliotecas <br>Escolares</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a role="button" href="#" class="btn btn-outline-primary">Biblioteca <br>del Aula</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="az" role="tabpanel" aria-labelledby="az-tab">
+                    <div class="row">
+                        
+                        <a role="button" href="#" class="btn btn-outline-primary">A</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">B</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">C</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">D</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">E</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">F</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">G</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">H</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">I</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">J</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">K</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">L</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">M</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">N</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">Ñ</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">O</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">P</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">Q</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">R</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">S</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">T</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">U</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">V</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">W</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">X</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">Y</a>
+                        <a role="button" href="#" class="btn btn-outline-primary">Z</a>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nivel" role="tabpanel" aria-labelledby="nivel-tab">
+                    <h5>Nivel</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+                                <input class="form-control form-control-sm w-100" type="text" placeholder="Buscar"
+                                  aria-label="Search">
+                              </form>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="mdb-select" searchable="Seleccionar..">
+                                <option value="1">Título</option>
+                                <option value="2">Autor</option>
+                                <option value="3">Tema</option>
+                              </select>
+                        </div>
+                    </div>
+                    <h5>Período</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <select class="mdb-select" searchable="Seleccionar..">
+                                <option value="1">Cualquier año</option>
+                                <option value="2">2006</option>
+                                <option value="3">2007</option>
+                                <option value="4">2008</option>
+                                <option value="5">2009</option>
+                                <option value="6">2010</option>
+                                <option value="7">2011</option>
+                                <option value="8">2012</option>
+                                <option value="9">2013</option>
+                                <option value="10">2014</option>
+                                <option value="11">2015</option>
+                                <option value="12">2016</option>
+                                <option value="13">2017</option>
+                                <option value="14">2018</option>
+                                <option value="15">2019</option>
+                                <option value="15">2019</option>
+                              </select>
+                        </div>
+                        <div class="col-md-2">
+                            <h6 class="text-center">a</h6>
+                        </div>
+                        <div class="col-md-5">
+                            <select class="mdb-select" searchable="Seleccionar..">
+                                <option value="1">Cualquier año</option>
+                                <option value="2">2006</option>
+                                <option value="3">2007</option>
+                                <option value="4">2008</option>
+                                <option value="5">2009</option>
+                                <option value="6">2010</option>
+                                <option value="7">2011</option>
+                                <option value="8">2012</option>
+                                <option value="9">2013</option>
+                                <option value="10">2014</option>
+                                <option value="11">2015</option>
+                                <option value="12">2016</option>
+                                <option value="13">2017</option>
+                                <option value="14">2018</option>
+                                <option value="15">2019</option>
+                                <option value="15">2020</option>
+                              </select>
+                        </div>
+                    </div>
+                    <a role="button" href="#" class="btn btn-outline-primary">Buscar</a>
+                    </div>
+                </div>
+              </div>
+        </div>
+            </div>
+        
+
+        <div class="col-md-6 white z-depth-1 pt-3">
+            <h5 class="font-weight-bold text-center">Búsqueda rápida</h5>
+        </div>
+
+        </div>
+    
+    </div>
