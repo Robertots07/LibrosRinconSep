@@ -42,7 +42,7 @@
                         <!--Excerpt-->
                         <div class="news-data text-center mb-2 pb-2">
                             <h4><strong>Biblioteca de actualización del Maestro</strong></h4>
-                            
+
                         </div>
 
 
@@ -149,147 +149,139 @@
 
             <h3 class="h3 text-center mb-5 text-primary">Libros del Rincón de este Mes</h3>
             <hr width="20%;" style="border: 2px solid #2F62A1;">
-                    <!--Carousel Wrapper-->
-        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-    
-            <!--Controls-->
-            <div class="controls-top">
-              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-            </div>
-            <!--/.Controls-->
-      
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-              <li data-target="#multi-item-example" data-slide-to="1"></li>
-              
-            </ol>
-            <!--/.Indicators-->
-      
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-      
-              <!--First slide-->
-              <div class="carousel-item active">
-      
-                <div class="row">
-                  <div class="col-md-3">
-                      <div class="view view-cascade overlay">
-                      <div class="card card-cascade mb-2">
-                          <img class="card-img-top" src="../../assets/img/fifth-grade.png"
-                          alt="Card image cap">
-                          <a data-toggle="modal" data-target="#fichalibro">
-                          <div class="mask rgba-white-slight"></div>
-                          </a>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                    <div class="card card-cascade mb-2">
-                      <div class="view view-cascade overlay">
-                      <img class="card-img-top" src="../../assets/img/catherine-war.png"
-                        alt="Card image cap">
-                        <a data-toggle="modal" data-target="#fichalibro">
-                          <div class="mask rgba-white-slight"></div>
-                        </a>
-                        </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                      <div class="card card-cascade mb-2">
-                          <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="../../assets/img/19-love-songs.png"
-                          alt="Card image cap">
-                          <a data-toggle="modal" data-target="#fichalibro">
-                              <div class="mask rgba-white-slight"></div>
-                            </a>
-                          </div>
-                      </div>
-                    </div>
-      
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card card-cascade mb-2">
-                            <div class="view view-cascade overlay">
-                          <img class="card-img-top" src="../../assets/img/19-love-songs.png"
-                            alt="Card image cap">
-                            <a data-toggle="modal" data-target="#fichalibro">
-                                <div class="mask rgba-white-slight"></div>
-                              </a>
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="view view-cascade overlay">
+                                    <div class="card card-cascade mb-2">
+                                        <img class="card-img-top" src="../../assets/img/fifth-grade.png" alt="Card image cap">
+                                        <a data-toggle="modal" (click)="openModal(1)">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/catherine-war.png" alt="Card image cap">
+                                        <a data-toggle="modal" (click)="openModal(2)">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/19-love-songs.png" alt="Card image cap">
+                                        <a data-toggle="modal" data-target="#fichalibro">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/19-love-songs.png" alt="Card image cap">
+                                        <a data-toggle="modal" data-target="#fichalibro">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                      </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/catherine-war.png" alt="Card image cap">
+                                        <a data-toggle="modal" data-target="#fichalibro">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/19-love-songs.png" alt="Card image cap">
+                                        <a data-toggle="modal" data-target="#fichalibro">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/fifth-grade.png" alt="Card image cap">
+                                        <a data-toggle="modal" data-target="#fichalibro">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card card-cascade mb-2">
+                                    <div class="view view-cascade overlay">
+                                        <img class="card-img-top" src="../../assets/img/fifth-grade.png" alt="Card image cap">
+                                        <a data-toggle="modal" data-target="#fichalibro">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
-      
-              </div>
-              <!--/.First slide-->
-      
-              <!--Second slide-->
-              <div class="carousel-item">
-      
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="card card-cascade mb-2">
-                      <div class="view view-cascade overlay">
-                      <img class="card-img-top" src="../../assets/img/catherine-war.png"
-                        alt="Card image cap">
-                        <a data-toggle="modal" data-target="#fichalibro">
-                          <div class="mask rgba-white-slight"></div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                    <div class="card card-cascade mb-2">
-                      <div class="view view-cascade overlay">
-                      <img class="card-img-top" src="../../assets/img/19-love-songs.png"
-                        alt="Card image cap">
-                        <a data-toggle="modal" data-target="#fichalibro">
-                          <div class="mask rgba-white-slight"></div>
-                          </a>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                      <div class="card card-cascade mb-2">
-                          <div class="view view-cascade overlay">
-                          <img class="card-img-top" src="../../assets/img/fifth-grade.png"
-                          alt="Card image cap">
-                          <a data-toggle="modal" data-target="#fichalibro">
-                              <div class="mask rgba-white-slight"></div>
-                          </a>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="col-md-3 clearfix d-none d-md-block">
-                    <div class="card card-cascade mb-2">
-                        <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="../../assets/img/fifth-grade.png"
-                        alt="Card image cap">
-                        <a data-toggle="modal" data-target="#fichalibro">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        </div>
-                    </div>
-                </div>
+                <!--/.Second slide-->
 
-                  </div>
-                </div>
-      
-              </div>
-              <!--/.Second slide-->
-      
-  
-            <!--/.Slides-->
-      
-          </div>
-          <!--/.Carousel Wrapper-->
+
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
 
         </section>
         <!--Section: Main features & Quick Start-->
@@ -520,7 +512,7 @@
         </section>
         <!--Section: Not enough-->
 
-        
+
 
         <!--Section: More-->
         <section>
@@ -596,13 +588,9 @@
                         <h3 class="font-weight-bold">Contacto</h3>
 
                         <p class="text-muted">
-                            <strong>Secretaría de Educación Pública</strong><br />
-                            República de Argentina #28,<br />
-                            Centro Histórico, Ciudad de México. C.P. 06020<br />
-                            <br />
-                            Teléfono: (55) 36017599<br />
-                            Atención a la ciudadanía: (01800) 288 6688. <br />Horario de Atención de 8:00 a 20:00 horas.
-                            </p>
+                            <strong>Secretaría de Educación Pública</strong><br /> República de Argentina #28,<br /> Centro Histórico, Ciudad de México. C.P. 06020<br />
+                            <br /> Teléfono: (55) 36017599<br /> Atención a la ciudadanía: (01800) 288 6688. <br />Horario de Atención de 8:00 a 20:00 horas.
+                        </p>
 
                     </div>
                     <!--Grid column-->
@@ -631,74 +619,7 @@
 
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade bottom" id="fichalibro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-     
-        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-              <div class="row d-flex">
-                <div class="col-md-5">
-                <img src="../../assets/img/fifth-grade.png">
-              </div>
-     
-              <div class="col-md-6 d-flex">
-               <table>
-                 <colgroup>
-                 <col style="width: 25%">
-                 <col style="width: 75%">
-                 </colgroup>
-                   <tr>
-                     <td><strong>Título</strong></td>
-                     <td>Fifth Grade</td>
-                   </tr>
-                   <tr>
-                     <td><strong>Autor (es)</strong></td>
-                     <td>Farah Rocks</td>
-                   </tr>
-                   <tr>
-                     <td><strong>Páginas</strong></td>
-                     <td>150</td>
-                   </tr>
-                   <tr>
-                     <td><strong>Edición</strong></td>
-                     <td>1a edición</td>
-                   </tr>
-                   <tr>
-                     <td><strong>Coedición</strong></td>
-                     <td>Lorem ipsum</td>
-                   </tr>
-                   <tr>
-                     <td><strong>Año</strong></td>
-                     <td>2011</td>
-                   </tr>
-                   <tr>
-                     <td><strong>País</strong></td>
-                     <td>Estados Unidos</td>
-                   </tr>
-                   <tr>
-                     <td rowspan="10"><strong>Reseña</strong></td>
-                     <td rowspan="10">Sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                   </tr>
-                   
-                 </table>
-     
-             </div>
-              
-             </div>
-            </div>
-     
-          </div>
-        </div>
-      </div>
-      <!-- Modal -->
+
     </div>
 </main>
 <!--Main layout-->

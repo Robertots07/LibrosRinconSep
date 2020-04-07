@@ -12,7 +12,17 @@ import { SobrecoleccionComponent } from './acervos/sobrecoleccion/sobrecoleccion
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 import { SeriesComponent } from './acervos/series/series.component';
+<<<<<<< HEAD
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ModalfichaComponent } from './componentes/modalficha/modalficha.component';
+=======
+import { CategoriasComponent } from './acervos/categorias/categorias.component';
+import { TitulosMonolinguesComponent } from './acervos/titulos-monolingues/titulos-monolingues.component';
+import { TitulosBilinguesComponent } from './acervos/titulos-bilingues/titulos-bilingues.component';
+import { ProduccionEstatalComponent } from './acervos/produccion-estatal/produccion-estatal.component';
+import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/catalogo-electronico.component';
 
+>>>>>>> b5dff16d14619d0d00da5d1df28b21cea313ebff
 
 @NgModule({
   declarations: [
@@ -25,11 +35,24 @@ import { SeriesComponent } from './acervos/series/series.component';
     SobrecoleccionComponent,
     MenuComponent,
     SidebarComponent,
-    SeriesComponent
+    SeriesComponent,
+<<<<<<< HEAD
+    ModalfichaComponent
+=======
+    CategoriasComponent,
+    TitulosMonolinguesComponent,
+    TitulosBilinguesComponent,
+    ProduccionEstatalComponent,
+    CatalogoElectronicoComponent
+>>>>>>> b5dff16d14619d0d00da5d1df28b21cea313ebff
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
+  ],
+  entryComponents:[
+    ModalfichaComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

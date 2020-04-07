@@ -1,0 +1,62 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h6>Titulo</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal('dismiss')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+    </div>
+    <div class="modal-body">
+        <div class="row d-flex">
+            <p>{{ fromParent | json }}</p>
+            <div class="col-md-6">
+                <img src="../../assets/img/fifth-grade.png" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 d-flex">
+                <table>
+                    <colgroup>
+                        <col style="width: 25%">
+                        <col style="width: 75%">
+                    </colgroup>
+                    <tr>
+                        <td><strong>Título</strong></td>
+                        <td>Fifth Grade</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Autor (es)</strong></td>
+                        <td>Farah Rocks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Páginas</strong></td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Edición</strong></td>
+                        <td>1a edición</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coedición</strong></td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Año</strong></td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td><strong>País</strong></td>
+                        <td>Estados Unidos</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="10"><strong>Reseña</strong></td>
+                        <td rowspan="10">Sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
