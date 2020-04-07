@@ -20,12 +20,7 @@ import { TitulosMonolinguesComponent } from './acervos/titulos-monolingues/titul
 import { TitulosBilinguesComponent } from './acervos/titulos-bilingues/titulos-bilingues.component';
 import { ProduccionEstatalComponent } from './acervos/produccion-estatal/produccion-estatal.component';
 import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/catalogo-electronico.component';
-<<<<<<< Updated upstream
 import { CategoriasComponent } from './acervos/categorias/categorias.component';
-=======
-import { MediatecaComponent } from './acervos/mediateca/mediateca.component';
-import { ProcesoComponent } from './proceso/proceso.component';
->>>>>>> Stashed changes
 
 
 @NgModule({
@@ -45,13 +40,8 @@ import { ProcesoComponent } from './proceso/proceso.component';
     TitulosBilinguesComponent,
     ProduccionEstatalComponent,
     CatalogoElectronicoComponent,
-<<<<<<< Updated upstream
     CategoriasComponent
 
-=======
-    MediatecaComponent,
-    ProcesoComponent
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
