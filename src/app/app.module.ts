@@ -21,6 +21,8 @@ import { TitulosBilinguesComponent } from './acervos/titulos-bilingues/titulos-b
 import { ProduccionEstatalComponent } from './acervos/produccion-estatal/produccion-estatal.component';
 import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/catalogo-electronico.component';
 import { CategoriasComponent } from './acervos/categorias/categorias.component';
+import { MediatecaComponent } from './acervos/mediateca/mediateca.component';
+
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { CategoriasComponent } from './acervos/categorias/categorias.component';
     TitulosBilinguesComponent,
     ProduccionEstatalComponent,
     CatalogoElectronicoComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    MediatecaComponent,
 
   ],
   imports: [
