@@ -9,13 +9,13 @@
                 <!-- Card image -->
                 <div class="view overlay">
                     <img class="card-img-top" src="../../../assets/img/libros-rincon.png" alt="Card image cap">
-                    <a>
+                    <a [routerLink]="['SobreColeccion']">
                         <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
 
                 <!-- Button -->
-                <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
+                <a [routerLink]="['SobreColeccion']" class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
         class="fas fa-chevron-right pl-1"></i></a>
                 <!-- Card content -->
                 <div class="card-body">
@@ -34,13 +34,13 @@
                 <!-- Card image -->
                 <div class="view overlay">
                     <img class="card-img-top" src="../../../assets/img/libros-rincon.png" alt="Card image cap">
-                    <a>
+                    <a [routerLink]="[ 'Series']">
                         <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
 
                 <!-- Button -->
-                <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
+                <a [routerLink]="[ 'Series']" class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
         class="fas fa-chevron-right pl-1"></i></a>
                 <!-- Card content -->
                 <div class="card-body">
@@ -59,13 +59,13 @@
                 <!-- Card image -->
                 <div class="view overlay">
                     <img class="card-img-top" src="../../../assets/img/libros-rincon.png" alt="Card image cap">
-                    <a>
+                    <a [routerLink]="[ 'Categorias']">
                         <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
 
                 <!-- Button -->
-                <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
+                <a [routerLink]="[ 'Categorias']" class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
         class="fas fa-chevron-right pl-1"></i></a>
                 <!-- Card content -->
                 <div class="card-body">
@@ -83,13 +83,13 @@
                 <!-- Card image -->
                 <div class="view overlay">
                     <img class="card-img-top" src="../../../assets/img/libros-rincon.png" alt="Card image cap">
-                    <a>
+                    <a [routerLink]="[ 'TitulosMonolingues']">
                         <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
 
                 <!-- Button -->
-                <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
+                <a [routerLink]="[ 'TitulosMonolingues']" class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
         class="fas fa-chevron-right pl-1"></i></a>
                 <!-- Card content -->
                 <div class="card-body">
@@ -193,7 +193,8 @@
                 <!-- Card content -->
                 <div class="card-body">
                     <!-- Title -->
-                    <h6 class="card-title text-uppercase pb-3">Mediateca</h6>
+                    <a [routerLink]="[ 'Mediateca' ]">
+                    <h6 class="card-title text-uppercase pb-3">Mediateca</h6></a>
                 </div>
             </div>
             <!-- Card -->
