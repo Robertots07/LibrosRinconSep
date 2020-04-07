@@ -16,11 +16,11 @@ import { SeriesComponent } from './acervos/series/series.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalfichaComponent } from './componentes/modalficha/modalficha.component';
 
-import { CategoriasComponent } from './acervos/categorias/categorias.component';
 import { TitulosMonolinguesComponent } from './acervos/titulos-monolingues/titulos-monolingues.component';
 import { TitulosBilinguesComponent } from './acervos/titulos-bilingues/titulos-bilingues.component';
 import { ProduccionEstatalComponent } from './acervos/produccion-estatal/produccion-estatal.component';
 import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/catalogo-electronico.component';
+import { CategoriasComponent } from './acervos/categorias/categorias.component';
 
 
 @NgModule({
@@ -36,11 +36,11 @@ import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/cat
     SidebarComponent,
     SeriesComponent,
     ModalfichaComponent,
-    CategoriasComponent,
     TitulosMonolinguesComponent,
     TitulosBilinguesComponent,
     ProduccionEstatalComponent,
-    CatalogoElectronicoComponent
+    CatalogoElectronicoComponent,
+    CategoriasComponent
 
   ],
   imports: [
