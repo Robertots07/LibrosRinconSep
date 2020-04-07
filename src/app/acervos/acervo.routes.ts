@@ -7,6 +7,7 @@ import { TitulosMonolinguesComponent } from './titulos-monolingues/titulos-monol
 import { TitulosBilinguesComponent } from './titulos-bilingues/titulos-bilingues.component';
 import { ProduccionEstatalComponent } from './produccion-estatal/produccion-estatal.component';
 import { CatalogoElectronicoComponent } from './catalogo-electronico/catalogo-electronico.component';
+import { MediatecaComponent } from './mediateca/mediateca.component';
 
 
 export const ACERVOS_ROUTES: Routes = [
@@ -19,5 +20,6 @@ export const ACERVOS_ROUTES: Routes = [
     { path: 'TitulosBilingues', component: TitulosBilinguesComponent },
     { path: 'ProduccionEstatal', component: ProduccionEstatalComponent },
     { path: 'CatalogoElectronico', component: CatalogoElectronicoComponent },
+    { path: 'Mediateca', component: MediatecaComponent },
     { path: '**', component: HomeAcervosComponent }
   ];
