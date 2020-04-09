@@ -22,6 +22,20 @@ import { ProduccionEstatalComponent } from './acervos/produccion-estatal/producc
 import { CatalogoElectronicoComponent } from './acervos/catalogo-electronico/catalogo-electronico.component';
 import { CategoriasComponent } from './acervos/categorias/categorias.component';
 import { MediatecaComponent } from './acervos/mediateca/mediateca.component';
+import { ProcesoComponent } from './proceso/proceso.component';
+import { HomeprocesoComponent } from './proceso/homeproceso/homeproceso.component';
+import { SobreprocesoComponent } from './proceso/sobreproceso/sobreproceso.component';
+import { IngresomatComponent } from './proceso/ingresomat/ingresomat.component';
+import { PreseleccionComponent } from './proceso/preseleccion/preseleccion.component';
+import { SeleccionComponent } from './proceso/seleccion/seleccion.component';
+import { AlumnosComponent } from './alumnos/alumnos.component';
+import { DocentesComponent } from './docentes/docentes.component';
+import { HomeAlumnosComponent } from './alumnos/home-alumnos/home-alumnos.component';
+import { LibrosSugeridosComponent } from './alumnos/libros-sugeridos/libros-sugeridos.component';
+import { HomeDocentesComponent } from './docentes/home-docentes/home-docentes.component';
+import { BamComponent } from './docentes/bam/bam.component';
+import { OrientacionComponent } from './docentes/orientacion/orientacion.component';
+
 
 
 
@@ -44,12 +58,27 @@ import { MediatecaComponent } from './acervos/mediateca/mediateca.component';
     CatalogoElectronicoComponent,
     CategoriasComponent,
     MediatecaComponent,
+    ProcesoComponent,
+    HomeprocesoComponent,
+    SobreprocesoComponent,
+    IngresomatComponent,
+    PreseleccionComponent,
+    SeleccionComponent,
+    AlumnosComponent,
+    DocentesComponent,
+    HomeAlumnosComponent,
+    LibrosSugeridosComponent,
+    HomeDocentesComponent,
+    BamComponent,
+    OrientacionComponent,
+
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   entryComponents:[
     ModalfichaComponent
