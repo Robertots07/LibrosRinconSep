@@ -15,14 +15,14 @@
                         <!--Image-->
                         <div class=" overlay rounded z-depth-1-half mb-2">
                             <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
-                            <a>
+                            <a [routerLink]="[ '/acervos/CatalogoElectronico' ]">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
                         <!--Excerpt-->
                         <div class="news-data text-center mb-2 pb-2">
                             <h4>
-                                <strong>Coleción libros del Rincón</strong>
+                                <strong>Colección libros del Rincón</strong>
                             </h4>
                         </div>
 
@@ -35,7 +35,7 @@
                         <!--Image-->
                         <div class=" overlay rounded z-depth-1-half mb-2">
                             <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
-                            <a>
+                            <a [routerLink]="[ '/docentes/Bam' ]">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
@@ -112,22 +112,26 @@
                 <!-- Third column -->
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
+                    <a [routerLink]="['/docentes']">
                     <div class="card card-body blue lighten-5 hoverable">
                         <img src="../../../assets/img/icono-docente.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
                         <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Docente</h5>
                     </div>
+                    </a>
                     <!--/.Panel-->
                 </div>
                 <!-- /.Third column -->
                 <!-- Third column -->
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
+                    <a [routerLink]="['/numeralia']">
                     <div class="card card-body blue lighten-5 hoverable">
                         <img src="../../../assets/img/icono-numeralia.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
                         <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Numeralia</h5>
                     </div>
+                    </a>
                     <!--/.Panel-->
                 </div>
                 <!-- /.Third column -->
