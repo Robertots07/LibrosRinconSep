@@ -5,13 +5,14 @@ import { AcervosComponent } from './acervos/acervos.component';
 import { ProcesoComponent } from './proceso/proceso.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { DocentesComponent } from './docentes/docentes.component';
+import { NumeraliaComponent } from './numeralia/numeralia.component';
 
 //Rutas para modulo Acervos
 import { ACERVOS_ROUTES } from './acervos/acervo.routes';
 import { PROCESO_ROUTES } from './proceso/proceso.routes';
 import { ALUMNOS_ROUTES } from './alumnos/alumnos.routes';
 import { DOCENTES_ROUTES } from './docentes/docentes.routes';
-
+import { NUMERALIA_ROUTES } from './numeralia/numeralia.routes';
 
 const routes: Routes = [
 
@@ -32,6 +33,10 @@ const routes: Routes = [
   { path: 'docentes',
   component: DocentesComponent,
   children: DOCENTES_ROUTES
+  },
+  { path: 'numeralia',
+  component: NumeraliaComponent,
+  children: NUMERALIA_ROUTES
   },
 
 { path: '**', component: InicioComponent }
