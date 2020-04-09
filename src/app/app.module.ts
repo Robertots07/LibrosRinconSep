@@ -35,6 +35,12 @@ import { LibrosSugeridosComponent } from './alumnos/libros-sugeridos/libros-suge
 import { HomeDocentesComponent } from './docentes/home-docentes/home-docentes.component';
 import { BamComponent } from './docentes/bam/bam.component';
 import { OrientacionComponent } from './docentes/orientacion/orientacion.component';
+import { NumeraliaComponent } from './numeralia/numeralia.component';
+import { HomeNumComponent } from './numeralia/home-num/home-num.component';
+import { BibliotecasDistribuidasComponent } from './numeralia/bibliotecas-distribuidas/bibliotecas-distribuidas.component';
+import { EjemplaresAdquiridosComponent } from './numeralia/ejemplares-adquiridos/ejemplares-adquiridos.component';
+import { TitulosAnualesComponent } from './numeralia/titulos-anuales/titulos-anuales.component';
+import { ArchivosComponent } from './archivos/archivos.component';
 
 
 
@@ -71,6 +77,12 @@ import { OrientacionComponent } from './docentes/orientacion/orientacion.compone
     HomeDocentesComponent,
     BamComponent,
     OrientacionComponent,
+    NumeraliaComponent,
+    HomeNumComponent,
+    BibliotecasDistribuidasComponent,
+    EjemplaresAdquiridosComponent,
+    TitulosAnualesComponent,
+    ArchivosComponent,
 
     
 
