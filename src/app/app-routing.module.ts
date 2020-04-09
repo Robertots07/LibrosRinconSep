@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { AcervosComponent } from './acervos/acervos.component';
 import { ProcesoComponent } from './proceso/proceso.component';
+import { AlumnosComponent } from './alumnos/alumnos.component';
+import { DocentesComponent } from './docentes/docentes.component';
 
 //Rutas para modulo Acervos
 import { ACERVOS_ROUTES } from './acervos/acervo.routes';
-
-//Rutas para modulo Proceso
 import { PROCESO_ROUTES } from './proceso/proceso.routes';
+import { ALUMNOS_ROUTES } from './alumnos/alumnos.routes';
+import { DOCENTES_ROUTES } from './docentes/docentes.routes';
 
 
 const routes: Routes = [
@@ -20,9 +22,18 @@ const routes: Routes = [
      children: ACERVOS_ROUTES
   },
   { path: 'proceso',
-  component: ProcesoComponent,
-  children: PROCESO_ROUTES
-},
+    component: ProcesoComponent,
+    children: PROCESO_ROUTES
+  },
+  { path: 'alumnos',
+  component: AlumnosComponent,
+  children: ALUMNOS_ROUTES
+  },
+  { path: 'docentes',
+  component: DocentesComponent,
+  children: DOCENTES_ROUTES
+  },
+
 { path: '**', component: InicioComponent }
 
 ];
