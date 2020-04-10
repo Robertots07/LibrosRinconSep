@@ -6,6 +6,7 @@ import { ProcesoComponent } from './proceso/proceso.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { DocentesComponent } from './docentes/docentes.component';
 import { NumeraliaComponent } from './numeralia/numeralia.component';
+import { ArchivosComponent } from './archivos/archivos.component';
 
 //Rutas para modulo Acervos
 import { ACERVOS_ROUTES } from './acervos/acervo.routes';
@@ -13,6 +14,8 @@ import { PROCESO_ROUTES } from './proceso/proceso.routes';
 import { ALUMNOS_ROUTES } from './alumnos/alumnos.routes';
 import { DOCENTES_ROUTES } from './docentes/docentes.routes';
 import { NUMERALIA_ROUTES } from './numeralia/numeralia.routes';
+
+import { ARCHIVOS_ROUTES } from './archivos/archivos.routes';
 
 const routes: Routes = [
 
@@ -37,6 +40,10 @@ const routes: Routes = [
   { path: 'numeralia',
   component: NumeraliaComponent,
   children: NUMERALIA_ROUTES
+  },
+  { path: 'archivos',
+  component: ArchivosComponent,
+  children: ARCHIVOS_ROUTES
   },
 
 { path: '**', component: InicioComponent }
