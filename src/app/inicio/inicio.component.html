@@ -15,14 +15,14 @@
                         <!--Image-->
                         <div class=" overlay rounded z-depth-1-half mb-2">
                             <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
-                            <a [routerLink]="[ '/acervos/CatalogoElectronico' ]">
+                            <a href="http://librosdelrincon.sep.gob.mx/catalogo/" target="_new">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
                         <!--Excerpt-->
                         <div class="news-data text-center mb-2 pb-2">
                             <h4>
-                                <strong>Colección libros del Rincón</strong>
+                                <strong>Catálogo libros del Rincón</strong>
                             </h4>
                         </div>
 
@@ -35,7 +35,7 @@
                         <!--Image-->
                         <div class=" overlay rounded z-depth-1-half mb-2">
                             <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
-                            <a [routerLink]="[ '/docentes/Bam' ]">
+                            <a href="http://librosdelrincon.sep.gob.mx/instalacion/libros_bam/" target="_new">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
@@ -138,11 +138,13 @@
                 <!-- Third column -->
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
+                    <a [routerLink]="[ '/archivos' ]">
                     <div class="card card-body blue lighten-5 hoverable">
                         <img src="../../../assets/img/icono-archivos.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
                         <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Archivos Históricos</h5>
                     </div>
+                    </a>
                     <!--/.Panel-->
                 </div>
                 <!-- /.Third column -->
