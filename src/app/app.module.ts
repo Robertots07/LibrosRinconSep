@@ -41,6 +41,11 @@ import { BibliotecasDistribuidasComponent } from './numeralia/bibliotecas-distri
 import { EjemplaresAdquiridosComponent } from './numeralia/ejemplares-adquiridos/ejemplares-adquiridos.component';
 import { TitulosAnualesComponent } from './numeralia/titulos-anuales/titulos-anuales.component';
 import { ArchivosComponent } from './archivos/archivos.component';
+import { HomeArchivosComponent } from './archivos/home-archivos/home-archivos.component';
+import { ConvocatoriasComponent } from './archivos/convocatorias/convocatorias.component';
+import { CatHistoricoComponent } from './archivos/cat-historico/cat-historico.component';
+import { SobreLibroComponent } from './archivos/sobre-libro/sobre-libro.component';
+import { EstrategiasLecturaComponent } from './archivos/estrategias-lectura/estrategias-lectura.component';
 
 
 
@@ -83,6 +88,11 @@ import { ArchivosComponent } from './archivos/archivos.component';
     EjemplaresAdquiridosComponent,
     TitulosAnualesComponent,
     ArchivosComponent,
+    HomeArchivosComponent,
+    ConvocatoriasComponent,
+    CatHistoricoComponent,
+    SobreLibroComponent,
+    EstrategiasLecturaComponent,
 
     
 
