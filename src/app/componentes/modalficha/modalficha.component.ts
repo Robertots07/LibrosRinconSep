@@ -16,9 +16,6 @@ export class ModalfichaComponent implements OnInit {
  
   ngOnInit() {
     console.log(this.fromParent);
-    /* Output:
-     {prop1: "Some Data", prop2: "From Parent Component", prop3: "This Can be anything"}
-    */
   }
  
   closeModal(sendData) {

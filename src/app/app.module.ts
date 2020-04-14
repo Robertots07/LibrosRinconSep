@@ -48,6 +48,8 @@ import { SobreLibroComponent } from './archivos/sobre-libro/sobre-libro.componen
 import { EstrategiasLecturaComponent } from './archivos/estrategias-lectura/estrategias-lectura.component';
 
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -101,6 +103,7 @@ import { EstrategiasLecturaComponent } from './archivos/estrategias-lectura/estr
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule
   ],
   entryComponents:[
     ModalfichaComponent

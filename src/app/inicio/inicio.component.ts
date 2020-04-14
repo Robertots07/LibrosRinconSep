@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalfichaComponent } from '../componentes/modalficha/modalficha.component';
-
+import { LibrosService } from '../services/libros.service';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent  {
+  portada: any[];
   constructor(
     private modalService: NgbModal,
+    private LibromService: LibrosService
   ) {
   }
 
@@ -36,6 +38,14 @@ export class InicioComponent  {
       console.log(result);
     }, (reason) => {
     });
+  }
+
+  ngOnInit() {
+
+    this.LibromService.librosmes().subscribe((data: any[])=>{
+      console.log(data);
+      this.portada = data;
+    })  
   }
 
 

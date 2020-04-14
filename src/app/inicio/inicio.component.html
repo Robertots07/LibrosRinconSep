@@ -86,12 +86,12 @@
                 <!-- Second column -->
                 <div class="col-md-4 mb-5">
                     <a [routerLink]="['/proceso']">
-                    <!--Panel-->
-                    <div class="card card-body blue lighten-5 hoverable">
-                        <img src="../../../assets/img/icono-proceso.png" alt="" width="120px" height="120px" style="display:block;
+                        <!--Panel-->
+                        <div class="card card-body blue lighten-5 hoverable">
+                            <img src="../../../assets/img/icono-proceso.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
-                        <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Proceso de Selección</h5>
-                    </div>
+                            <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Proceso de Selección</h5>
+                        </div>
                     </a>
                     <!--/.Panel-->
                 </div>
@@ -100,11 +100,11 @@
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
                     <a [routerLink]="['/alumnos']">
-                    <div class="card card-body blue lighten-5 hoverable">
-                        <img src="../../../assets/img/icono-alumnos.png" alt="" width="120px" height="120px" style="display:block;
+                        <div class="card card-body blue lighten-5 hoverable">
+                            <img src="../../../assets/img/icono-alumnos.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
-                        <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Alumno</h5>
-                    </div>
+                            <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Alumno</h5>
+                        </div>
                     </a>
                     <!--/.Panel-->
                 </div>
@@ -113,11 +113,11 @@
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
                     <a [routerLink]="['/docentes']">
-                    <div class="card card-body blue lighten-5 hoverable">
-                        <img src="../../../assets/img/icono-docente.png" alt="" width="120px" height="120px" style="display:block;
+                        <div class="card card-body blue lighten-5 hoverable">
+                            <img src="../../../assets/img/icono-docente.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
-                        <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Docente</h5>
-                    </div>
+                            <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Docente</h5>
+                        </div>
                     </a>
                     <!--/.Panel-->
                 </div>
@@ -126,11 +126,11 @@
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
                     <a [routerLink]="['/numeralia']">
-                    <div class="card card-body blue lighten-5 hoverable">
-                        <img src="../../../assets/img/icono-numeralia.png" alt="" width="120px" height="120px" style="display:block;
+                        <div class="card card-body blue lighten-5 hoverable">
+                            <img src="../../../assets/img/icono-numeralia.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
-                        <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Numeralia</h5>
-                    </div>
+                            <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Numeralia</h5>
+                        </div>
                     </a>
                     <!--/.Panel-->
                 </div>
@@ -139,11 +139,11 @@
                 <div class="col-md-4 mb-5">
                     <!--Panel-->
                     <a [routerLink]="[ '/archivos' ]">
-                    <div class="card card-body blue lighten-5 hoverable">
-                        <img src="../../../assets/img/icono-archivos.png" alt="" width="120px" height="120px" style="display:block;
+                        <div class="card card-body blue lighten-5 hoverable">
+                            <img src="../../../assets/img/icono-archivos.png" alt="" width="120px" height="120px" style="display:block;
                         margin:auto;">
-                        <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Archivos Históricos</h5>
-                    </div>
+                            <h5 class="feature-title font-weight-bold indigo-text text-uppercase my-3">Archivos Históricos</h5>
+                        </div>
                     </a>
                     <!--/.Panel-->
                 </div>
@@ -169,14 +169,6 @@
                 </div>
                 <!--/.Controls-->
 
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-
-                </ol>
-                <!--/.Indicators-->
-
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
 
@@ -184,44 +176,11 @@
                     <div class="carousel-item active">
 
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="view view-cascade overlay">
+                            <div *ngFor="let p of portada;let i=index;" class="col-md-3 clearfix d-none d-md-block">
+                                <div *ngIf="i<4" class="view view-cascade overlay">
                                     <div class="card card-cascade mb-2">
-                                        <img class="card-img-top" src="../../assets/img/fifth-grade.png" alt="Card image cap">
-                                        <a data-toggle="modal" (click)="openModal(1)">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 clearfix d-none d-md-block">
-                                <div class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/catherine-war.png" alt="Card image cap">
-                                        <a data-toggle="modal" (click)="openModal(2)">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 clearfix d-none d-md-block">
-                                <div class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/19-love-songs.png" alt="Card image cap">
-                                        <a data-toggle="modal" data-target="#fichalibro">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 clearfix d-none d-md-block">
-                                <div class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/19-love-songs.png" alt="Card image cap">
-                                        <a data-toggle="modal" data-target="#fichalibro">
+                                        <img class="card-img-top" src="{{ p.img }}" alt="Card image cap">
+                                        <a data-toggle="modal" (click)="openModal(p.id)">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
@@ -234,52 +193,21 @@
                     <!--/.First slide-->
 
                     <!--Second slide-->
-                    <div class="carousel-item">
+                    <div *ngIf="portada.length >4" class="carousel-item">
 
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="card card-cascade mb-2">
+                            <div *ngFor="let p of portada;let z=index;" class="col-md-3">
+                                <div *ngIf="z>3" class="card card-cascade mb-2">
                                     <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/catherine-war.png" alt="Card image cap">
-                                        <a data-toggle="modal" data-target="#fichalibro">
+                                        <img class="card-img-top" src="{{ p.img }}" alt="Card image cap">
+                                        <a data-toggle="modal" (click)="openModal(p.id)">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3 clearfix d-none d-md-block">
-                                <div class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/19-love-songs.png" alt="Card image cap">
-                                        <a data-toggle="modal" data-target="#fichalibro">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="col-md-3 clearfix d-none d-md-block">
-                                <div class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/fifth-grade.png" alt="Card image cap">
-                                        <a data-toggle="modal" data-target="#fichalibro">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 clearfix d-none d-md-block">
-                                <div class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
-                                        <img class="card-img-top" src="../../assets/img/fifth-grade.png" alt="Card image cap">
-                                        <a data-toggle="modal" data-target="#fichalibro">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
