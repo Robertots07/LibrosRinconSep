@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalfichaComponent } from '../componentes/modalficha/modalficha.component';
 import { LibrosService } from '../services/libros.service';
+import {NoticiasService} from '../services/noticias.service';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -9,9 +10,12 @@ import { LibrosService } from '../services/libros.service';
 })
 export class InicioComponent  {
   portada: any[];
+  noticia: any[];
+  
   constructor(
     private modalService: NgbModal,
-    private LibromService: LibrosService
+    private LibromService: LibrosService,
+    private Noti: NoticiasService
   ) {
   }
 
@@ -41,11 +45,17 @@ export class InicioComponent  {
   }
 
   ngOnInit() {
-
+   //Servicio de libros del mes
     this.LibromService.librosmes().subscribe((data: any[])=>{
       console.log(data);
       this.portada = data;
-    })  
+    }) 
+    //Servicio de Noticias
+    this.Noti.noticias().subscribe((data: any[])=>{
+      console.log(data);
+      this.noticia = data;
+    }) 
+
   }
 
 

@@ -193,7 +193,7 @@
                     <!--/.First slide-->
 
                     <!--Second slide-->
-                    <div *ngIf="portada.length >4" class="carousel-item">
+                    <div *ngIf="portada?.length >4" class="carousel-item">
 
                         <div class="row">
                             <div *ngFor="let p of portada;let z=index;" class="col-md-3">
@@ -206,8 +206,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
 
                         </div>
                     </div>
@@ -271,182 +269,32 @@
                             <h6> <strong style="font-size: xx-large;">NOTICIAS</strong></h6>
                             <hr class="my-3" style="border: 2px solid #2F62A1;">
                             <!-- Small news -->
-                            <div class="single-news mb-4">
-
+                            <div *ngFor="let n of noticia" class="single-news mb-4">
                                 <!-- Grid row -->
                                 <div class="row">
-
-                                    <!-- Grid column -->
-
                                     <!-- Grid column -->
                                     <div class="col-md-12">
-
                                         <!-- Excerpt -->
-                                        <p class="font-weight-bold dark-grey-text">At vero eos et accusamus et iusto odio qui blanditiis</p>
+                                        <p class="font-weight-bold dark-grey-text">{{ n.titulo }}</p>
                                         <div class="d-flex justify-content-between">
                                             <div class="col-11 text-truncate pl-0 mb-3">
-                                                <a href="#!" class="dark-grey-text">26/02/2018</a>
+                                                <a href="#!" class="dark-grey-text">{{ n.fecha }}</a>
                                             </div>
-                                            <a><i class="fas fa-angle-double-right"></i></a>
+                                            <a href="{{ n.noticia_url }}" target="blank_"><i class="fas fa-angle-double-right"></i></a>
                                         </div>
-
                                     </div>
                                     <!-- Grid column -->
-
                                 </div>
                                 <!-- Grid row -->
-
                             </div>
                             <!-- Small news -->
-
-                            <!-- Small news -->
-                            <div class="single-news mb-4">
-
-                                <!-- Grid row -->
-                                <div class="row">
-
-                                    <!-- Grid column -->
-                                    <div class="col-md-12">
-
-                                        <!-- Excerpt -->
-                                        <p class="font-weight-bold dark-grey-text">At vero eos et accusamus et iusto odio qui blanditiis</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="col-11 text-truncate pl-0 mb-3">
-                                                <a href="#!" class="dark-grey-text">26/02/2018</a>
-                                            </div>
-                                            <a><i class="fas fa-angle-double-right"></i></a>
-                                        </div>
-
-                                    </div>
-                                    <!-- Grid column -->
-
-                                </div>
-                                <!-- Grid row -->
-
-                            </div>
-                            <!-- Small news -->
-
-                            <!-- Small news -->
-                            <div class="single-news mb-4">
-
-                                <!-- Grid row -->
-                                <div class="row">
-
-
-                                    <!-- Grid column -->
-                                    <div class="col-md-12">
-
-                                        <!-- Excerpt -->
-                                        <p class="font-weight-bold dark-grey-text">At vero eos et accusamus et iusto odio qui blanditiis</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="col-11 text-truncate pl-0 mb-3">
-                                                <a href="#!" class="dark-grey-text">26/02/2018</a>
-                                            </div>
-                                            <a><i class="fas fa-angle-double-right"></i></a>
-                                        </div>
-
-                                    </div>
-                                    <!-- Grid column -->
-
-                                </div>
-                                <!-- Grid row -->
-
-                            </div>
-                            <!-- Small news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-4">
-
-                                <!-- Grid row -->
-                                <div class="row">
-
-
-                                    <!-- Grid column -->
-                                    <div class="col-md-12">
-
-                                        <!-- Excerpt -->
-                                        <p class="font-weight-bold dark-grey-text">At vero eos et accusamus et iusto odio qui blanditiis</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="col-11 text-truncate pl-0 mb-3">
-                                                <a href="#!" class="dark-grey-text">26/02/2018</a>
-                                            </div>
-                                            <a><i class="fas fa-angle-double-right"></i></a>
-                                        </div>
-
-                                    </div>
-                                    <!-- Grid column -->
-
-                                </div>
-                                <!-- Grid row -->
-
-                            </div>
-                            <!-- Small news -->
-                            <!-- Small news -->
-                            <div class="single-news mb-4">
-
-                                <!-- Grid row -->
-                                <div class="row">
-
-
-                                    <!-- Grid column -->
-                                    <div class="col-md-12">
-
-                                        <!-- Excerpt -->
-                                        <p class="font-weight-bold dark-grey-text">At vero eos et accusamus et iusto odio qui blanditiis</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="col-11 text-truncate pl-0 mb-3">
-                                                <a href="#!" class="dark-grey-text">26/02/2018</a>
-                                            </div>
-                                            <a><i class="fas fa-angle-double-right"></i></a>
-                                        </div>
-
-                                    </div>
-                                    <!-- Grid column -->
-
-                                </div>
-                                <!-- Grid row -->
-
-                            </div>
-                            <!-- Small news -->
-
-                            <!-- Small news -->
-                            <div class="single-news">
-
-                                <!-- Grid row -->
-                                <div class="row">
-
-                                    <!-- Grid column -->
-                                    <div class="col-md-12">
-
-                                        <!-- Excerpt -->
-                                        <p class="font-weight-bold dark-grey-text">At vero eos et accusamus et iusto odio qui blanditiis</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="col-11 text-truncate pl-0 mb-3">
-                                                <a href="#!" class="dark-grey-text">26/02/2018</a>
-                                            </div>
-                                            <a><i class="fas fa-angle-double-right"></i></a>
-                                        </div>
-
-                                    </div>
-                                    <!-- Grid column -->
-
-                                </div>
-                                <!-- Grid row -->
-
-                            </div>
-                            <!-- Small news -->
-
                         </div>
                         <!--Grid column-->
-
                     </div>
                     <!-- Grid row -->
-
                 </section>
                 <!--Section: Content-->
-
-
             </div>
-
         </section>
         <!--Section: Not enough-->
 
