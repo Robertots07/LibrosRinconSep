@@ -3,6 +3,7 @@ import {NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalfichaComponent } from '../componentes/modalficha/modalficha.component';
 import { LibrosService } from '../services/libros.service';
 import {NoticiasService} from '../services/noticias.service';
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -11,11 +12,13 @@ import {NoticiasService} from '../services/noticias.service';
 export class InicioComponent  {
   portada: any[];
   noticia: any[];
+
   
   constructor(
     private modalService: NgbModal,
     private LibromService: LibrosService,
     private Noti: NoticiasService
+    
   ) {
   }
 
@@ -26,18 +29,13 @@ export class InicioComponent  {
         scrollable: true,
         size: 'lg',
         windowClass:'animated fadeInUp modal-holder',
-        centered: true,
-        
+        centered: true,  
       });
-
-    let data = {
-      id: id,
-      prop1: 'Some Data',
-      prop2: 'From Parent Component',
-      prop3: 'This Can be anything'
+   let datas = {
+      id: id
     }
 
-    modalRef.componentInstance.fromParent = data;
+    modalRef.componentInstance.fromParent = datas;
     modalRef.result.then((result) => {
       console.log(result);
     }, (reason) => {
