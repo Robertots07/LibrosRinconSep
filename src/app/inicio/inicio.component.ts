@@ -31,10 +31,7 @@ export class InicioComponent  {
         windowClass:'animated fadeInUp modal-holder',
         centered: true,  
       });
-   let datas = {
-      id: id
-    }
-
+    let datas = { id: id }
     modalRef.componentInstance.fromParent = datas;
     modalRef.result.then((result) => {
       console.log(result);
