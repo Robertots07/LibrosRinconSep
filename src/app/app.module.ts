@@ -49,6 +49,10 @@ import { EstrategiasLecturaComponent } from './archivos/estrategias-lectura/estr
 
 
 import { HttpClientModule } from '@angular/common/http';
+import { SidebarArchivosComponent } from './componentes/sidebar-archivos/sidebar-archivos.component';
+import { SidebarProcesoComponent } from './componentes/sidebar-proceso/sidebar-proceso.component';
+import { SidebarNumeraliaComponent } from './componentes/sidebar-numeralia/sidebar-numeralia.component';
+import { SidebarDocentesComponent } from './componentes/sidebar-docentes/sidebar-docentes.component';
 
 
 
@@ -95,6 +99,10 @@ import { HttpClientModule } from '@angular/common/http';
     CatHistoricoComponent,
     SobreLibroComponent,
     EstrategiasLecturaComponent,
+    SidebarArchivosComponent,
+    SidebarProcesoComponent,
+    SidebarNumeraliaComponent,
+    SidebarDocentesComponent,
 
     
 
