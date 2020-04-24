@@ -33,7 +33,7 @@
                     <div class="col-md-6 mb-4 white-text text-center text-md-left">
 
                         <!--Image-->
-                        <div class=" overlay rounded z-depth-1-half mb-2">
+                        <div class="overlay rounded z-depth-1-half mb-3">
                             <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
                             <a href="http://librosdelrincon.sep.gob.mx/instalacion/libros_bam/" target="_new">
                                 <div class="mask rgba-white-slight"></div>
@@ -63,7 +63,7 @@
 <!-- Full Page Intro -->
 
 <!--Main layout-->
-<main style="margin-top: -120px;">
+<main>
     <div class="container">
 
         <!--Section: Main info-->
@@ -157,7 +157,7 @@
         <!--Section: Main features & Quick Start-->
         <section>
 
-            <h3 class="h3 text-center mb-5 text-primary">Libros del Rincón de este Mes</h3>
+            <h3 class="h3 text-center my-5 text-primary">Libros del Rincón de este Mes</h3>
             <hr width="20%;" style="border: 2px solid #2F62A1;">
             <!--Carousel Wrapper-->
             <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -177,9 +177,9 @@
 
                         <div class="row">
                             <div *ngFor="let p of portada;let i=index;" class="col-md-3 clearfix d-none d-md-block">
-                                <div *ngIf="i<4" class="view view-cascade overlay">
-                                    <div class="card card-cascade mb-2">
-                                        <img class="card-img-top" src="{{ p.img }}" alt="Card image cap">
+                                <div *ngIf="i<4" class="card card-cascade mb-3">
+                                    <div class="view-cascade overlay">
+                                        <img class="img-fluid" src="{{ p.img }}" alt="Card image cap">
                                         <a data-toggle="modal" (click)="openModal(p.id)">
                                             <div class="mask rgba-white-slight"></div>
                                         </a>
@@ -197,8 +197,8 @@
 
                         <div class="row">
                             <div *ngFor="let p of portada;let z=index;" class="col-md-3">
-                                <div *ngIf="z>3" class="card card-cascade mb-2">
-                                    <div class="view view-cascade overlay">
+                                <div *ngIf="z>3" class="card card-cascade mb-3">
+                                    <div class="view-cascade overlay">
                                         <img class="card-img-top" src="{{ p.img }}" alt="Card image cap">
                                         <a data-toggle="modal" (click)="openModal(p.id)">
                                             <div class="mask rgba-white-slight"></div>
@@ -239,21 +239,21 @@
                             <!-- Featured news -->
                             <div class="single-news">
                                 <!-- Image -->
-                                <div class="view overlay rounded z-depth-1-half mb-4">
+                                <div class="overlay rounded z-depth-1-half mb-4">
                                     <img class="img-fluid" src="../../assets/img/bibliotecas-escolares.jpg" alt="">
                                     <a>
                                         <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
                                 <!-- Image -->
-                                <div class="view overlay rounded z-depth-1-half mb-4">
+                                <div class="overlay rounded z-depth-1-half mb-4">
                                     <img class="img-fluid" src="../../assets/img/bibliotecas-escolares.jpg" alt="Sample image">
                                     <a>
                                         <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>
                                 <!-- Image -->
-                                <div class="view overlay rounded z-depth-1-half mb-4">
+                                <div class="overlay rounded z-depth-1-half mb-4">
                                     <img class="img-fluid" src="../../assets/img/bibliotecas-escolares.jpg" alt="Sample image">
                                     <a>
                                         <div class="mask rgba-white-slight"></div>
@@ -316,25 +316,25 @@
                                 <div class="row">
 
                                     <!--First column-->
-                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center mb-4">
                                         <img src="../../assets/img/logo-oei.png" class="img-fluid px-4" alt="Logo">
                                     </div>
                                     <!--/First column-->
 
                                     <!--Second column-->
-                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center mb-4">
                                         <img src="../../assets/img/logo-cultura.png" class="img-fluid px-4" alt="Logo">
                                     </div>
                                     <!--/Second column-->
 
                                     <!--Third column-->
-                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center mb-4">
                                         <img src="../../assets/img/logo-unesco.png" class="img-fluid px-4" alt="Logo">
                                     </div>
                                     <!--/Third column-->
 
                                     <!--Fourth column-->
-                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center mb-4">
                                         <img src="../../assets/img/logo-cultura.png" class="img-fluid px-4" alt="Logo">
                                     </div>
                                     <!--/Fourth column-->
@@ -386,7 +386,7 @@
 
                         <!--Image-->
                         <div class="">
-                            <img src="../../../assets/img/logo-libros-del-rincon.png" class="img-fluid" alt="">
+                            <img src="../../../assets/img/logo-librosdelrincon.png" class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask rgba-white-light"></div>
                             </a>
