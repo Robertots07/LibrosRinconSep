@@ -53,6 +53,7 @@ import { SidebarArchivosComponent } from './componentes/sidebar-archivos/sidebar
 import { SidebarProcesoComponent } from './componentes/sidebar-proceso/sidebar-proceso.component';
 import { SidebarNumeraliaComponent } from './componentes/sidebar-numeralia/sidebar-numeralia.component';
 import { SidebarDocentesComponent } from './componentes/sidebar-docentes/sidebar-docentes.component';
+import { OrientacionesInstalacionComponent } from './docentes/orientaciones-instalacion/orientaciones-instalacion.component';
 
 
 
@@ -103,6 +104,7 @@ import { SidebarDocentesComponent } from './componentes/sidebar-docentes/sidebar
     SidebarProcesoComponent,
     SidebarNumeraliaComponent,
     SidebarDocentesComponent,
+    OrientacionesInstalacionComponent,
 
     
 
