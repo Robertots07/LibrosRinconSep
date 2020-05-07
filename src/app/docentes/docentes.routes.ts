@@ -9,6 +9,6 @@ export const DOCENTES_ROUTES: Routes = [
     { path: 'HomeDocentes', component: HomeDocentesComponent },
     { path: 'Bam', component: BamComponent },
     { path: 'Orientacion', component: OrientacionComponent },
-    { path: 'OrientacionesInstalacion', component: OrientacionComponent },
+    { path: 'OrientacionesInstalacion', component: OrientacionesInstalacionComponent },
     { path: '**', component: HomeDocentesComponent }
   ];
