@@ -178,7 +178,7 @@
                         <div class="row">
                             <div *ngFor="let p of portada;let i=index;" class="col-md-3 clearfix d-none d-md-block">
                                 <div *ngIf="i<4" class="card card-cascade mb-3">
-                                    <div class="view-cascade overlay">
+                                    <div class="view-cascade overlay" (click)="openModal(p.id)">
                                         <img class="img-fluid" src="{{ p.img }}" alt="Card image cap">
                                         <a data-toggle="modal" (click)="openModal(p.id)">
                                             <div class="mask rgba-white-slight"></div>
@@ -198,7 +198,7 @@
                         <div class="row">
                             <div *ngFor="let p of portada;let z=index;" class="col-md-3">
                                 <div *ngIf="z>3" class="card card-cascade mb-3">
-                                    <div class="view-cascade overlay">
+                                    <div class="view-cascade overlay" (click)="openModal(p.id)">
                                         <img class="card-img-top" src="{{ p.img }}" alt="Card image cap">
                                         <a data-toggle="modal" (click)="openModal(p.id)">
                                             <div class="mask rgba-white-slight"></div>
