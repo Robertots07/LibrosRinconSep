@@ -5,17 +5,17 @@
 
     <ul class="list-unstyled components">
         <a [routerLink]="[ '/proceso']"><p>PROCESO DE SELECCIÓN</p></a>
-        <li class="active">
-            <a [routerLink]="[ '../Sobreproceso']">Sobre el proceso de selección</a>
+        <li routerLinkActive="active">
+            <a [routerLink]="[ '../Sobreproceso']" routerLinkActive="active">Sobre el proceso de selección</a>
         </li>
-        <li>
-            <a [routerLink]="[ '../Ingresomat']">Ingreso de Materiales</a>
+        <li routerLinkActive="active">
+            <a [routerLink]="[ '../Ingresomat']" routerLinkActive="active">Ingreso de Materiales</a>
         </li>
-        <li>
-            <a [routerLink]="[ '../Preseleccion']">Preeselección</a>
+        <li routerLinkActive="active">
+            <a [routerLink]="[ '../Preseleccion']" routerLinkActive="active">Preeselección</a>
         </li>
-        <li>
-            <a [routerLink]="[ '../Seleccion']">Selección</a>
+        <li routerLinkActive="active">
+            <a [routerLink]="[ '../Seleccion']" routerLinkActive="active">Selección</a>
         </li>
     </ul>
 </nav>
